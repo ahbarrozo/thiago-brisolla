@@ -3,5 +3,5 @@
 }
 
 .blogpost-text {
-    @apply text-gray-700
+    @apply text-gray-700 text-justify space-y-2 flex-1
 }

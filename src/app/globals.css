@@ -44,3 +44,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, Questrial, sans-serif;
 }
+
+.p-dialog-content {
+    overflow-y: unset !important;
+}
