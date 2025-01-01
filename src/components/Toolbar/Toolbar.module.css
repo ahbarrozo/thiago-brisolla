@@ -1,0 +1,15 @@
+.toolbar-container {
+  @apply bg-white shadow-sm border-b;
+}
+
+.logo-section {
+  @apply text-4xl font-bold text-blue-600 hover:text-blue-700;
+}
+
+.nav-section {
+  @apply flex items-center gap-12 text-xl;
+}
+
+.admin-section {
+  @apply flex items-center gap-3;
+}

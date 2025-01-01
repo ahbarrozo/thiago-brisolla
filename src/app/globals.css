@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('../assets/fonts/Questrial-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer components {
+    .button-hover {
+        @apply hover:text-gray-400
+               transition-colors
+               text-gray-700
+               font-questrial
+               tracking-widest;
+    }
+
+    .button-active {
+        @apply bg-blue-50
+               text-blue-600
+               font-questrial
+               tracking-widest;
+    }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, Questrial, sans-serif;
+}
